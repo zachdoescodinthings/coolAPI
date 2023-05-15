@@ -1,2 +1,2 @@
 # coolAPI
-Having fun with Reddit API!
+exploring web APIs!
