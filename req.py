@@ -3,8 +3,8 @@ import json
 
 
 # Set up OAuth2 authentication with LinkedIn
-client_id = '30S6ZT3AYYPFYEMWJVMP6YWS'
-client_secret = '***************************************'
+client_id = '**************************************'
+client_secret = '**************************************'
 redirect_uri = 'https://bit.ly/43eYTkf'
 auth_url = 'https://www.linkedin.com/oauth/v2/authorization'
 access_token_url = 'https://www.linkedin.com/oauth/v2/accessToken'
