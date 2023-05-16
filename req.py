@@ -5,7 +5,7 @@ import json
 # Set up OAuth2 authentication with LinkedIn
 client_id = '30S6ZT3AYYPFYEMWJVMP6YWS'
 client_secret = '***************************************'
-redirect_uri = '<your redirect URI here>'
+redirect_uri = 'https://bit.ly/43eYTkf'
 auth_url = 'https://www.linkedin.com/oauth/v2/authorization'
 access_token_url = 'https://www.linkedin.com/oauth/v2/accessToken'
 scope = 'r_liteprofile'  # Request basic profile information
@@ -45,6 +45,28 @@ if r.ok:
 else:
     print(f'Request failed with status code {r.status_code}: {r.text}')
 
-    
+   
+import tweepy
+
+# Set up authentication with Twitter API
+consumer_key = '**************************************'
+consumer_secret = '**************************************'
+access_token = '**************************************'
+access_token_secret = '**************************************'
+auth = tweepy.OAuth1UserHandler(consumer_key, consumer_secret, access_token, access_token_secret)
+
+# Create API object
+api = tweepy.API(auth)
+
+# Get user's profile information
+username = 'allziswell_'
+user = api.get_user(username)
+
+# Print user information
+print(f'Name: {user.name}')
+print(f'Screen name: {user.screen_name}')
+print(f'Followers count: {user.followers_count}')
+print(f'Friends count: {user.friends_count}')
+
     
 
